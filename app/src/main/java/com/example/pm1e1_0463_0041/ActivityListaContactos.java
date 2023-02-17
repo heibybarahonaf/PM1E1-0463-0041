@@ -233,8 +233,8 @@ public class ActivityListaContactos extends AppCompatActivity {
     }
 
     private void enviarContacto(){
-        String contactoEnviado = "El numero de "+contacto.getNombreContacto().toString()+
-                " es +"+contacto.getCodigoPais()+contacto.getNumeroContacto() ;
+        String contactoEnviado = "Nombre: "+contacto.getNombreContacto().toString()+
+                " Contacto: +"+contacto.getCodigoPais()+contacto.getNumeroContacto() ;
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, contactoEnviado);
